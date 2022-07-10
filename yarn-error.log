@@ -1,0 +1,49 @@
+Arguments: 
+  /Users/wayne/.nvm/versions/node/v16.11.1/bin/node /Users/wayne/.nvm/versions/node/v16.11.1/bin/yarn install
+
+PATH: 
+  /var/folders/mf/wkp9mf256bdc3v2ckzwlznqh0000gn/T/yarn--1657432188009-0.7718275795686749:/Users/wayne/.config/yarn/global/node_modules/.bin:/Users/wayne/.config/yarn/link/node_modules/.bin:/Users/wayne/.nvm/versions/node/v16.11.1/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/wayne/.nvm/versions/node/v16.11.1/bin/node_modules/npm/bin/node-gyp-bin:/Users/wayne/.bun/bin:/Users/wayne/Library/pnpm:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/wayne/.yarn/bin:/opt/homebrew/bin:/Users/wayne/bin:/usr/local/bin:/usr/local/mysql/bin:/Users/wayne/.nvm/versions/node/v16.11.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.11.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  TypeError: Cannot create property 'http' on string 'https://npm.taobao.org/mirrors/phantomjs'
+      at set (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:53945:28)
+      at set (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:53959:14)
+      at set (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:53939:16)
+      at Function.objectPath.set (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:53992:14)
+      at NpmRegistry.mergeEnv (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:92155:18)
+      at NpmRegistry.<anonymous> (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:31942:12)
+      at Generator.next (<anonymous>)
+      at step (/Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/wayne/.nvm/versions/node/v16.11.1/lib/node_modules/yarn/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "react-ppt",
+    "private": true,
+    "scripts": {
+      "build": "slidev build",
+      "dev": "slidev --open",
+      "export": "slidev export"
+    },
+    "dependencies": {
+      "@slidev/cli": "^0.34.3",
+      "@slidev/theme-default": "*",
+      "@slidev/theme-seriph": "*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
